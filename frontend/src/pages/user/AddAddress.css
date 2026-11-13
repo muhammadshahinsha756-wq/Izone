@@ -1,0 +1,205 @@
+
+.add-address-container {
+  max-width: 1000px;
+  min-height: 65vh;
+  margin: auto;
+  padding: 35px 25px 70px;
+  color: #222;
+}
+
+.add-address-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 45px;
+  color: #888;
+  font-size: 13px;
+}
+
+.add-address-breadcrumb a {
+  color: #777;
+  text-decoration: none;
+}
+
+.add-address-breadcrumb strong {
+  color: #222;
+}
+
+.add-address-heading {
+  margin-bottom: 30px;
+}
+
+.add-address-heading p {
+  color: #888;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.add-address-heading h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.add-address-heading span {
+  color: #777;
+  font-size: 14px;
+}
+
+.add-address-form {
+  padding: 35px;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.address-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px 20px;
+}
+
+.address-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.address-input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.address-input-group input,
+.address-input-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #222;
+  background: #fff;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.address-input-group input:focus,
+.address-input-group textarea:focus {
+  border-color: #222;
+}
+
+.address-input-group textarea {
+  resize: vertical;
+}
+
+.address-input-group input::placeholder,
+.address-input-group textarea::placeholder {
+  color: #aaa;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.default-address-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+  color: #555;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.default-address-checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #111;
+  cursor: pointer;
+}
+
+.add-address-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+}
+
+.address-cancel-btn,
+.add-address-actions button {
+  min-width: 125px;
+  padding: 13px 20px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.address-cancel-btn {
+  border: 1px solid #ddd;
+  color: #333;
+  background: white;
+}
+
+.add-address-actions button {
+  border: none;
+  background: #111;
+  color: white;
+}
+
+.add-address-actions button:hover {
+  background: #333;
+}
+
+.add-address-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.address-form-error {
+  color: #c0392b;
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+@media (max-width: 650px) {
+  .add-address-container {
+    padding: 25px 16px 50px;
+  }
+
+  .add-address-form {
+    padding: 22px 16px;
+  }
+
+  .address-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .add-address-heading h1 {
+    font-size: 28px;
+  }
+
+  .add-address-actions {
+    flex-direction: column-reverse;
+  }
+
+  .address-cancel-btn,
+  .add-address-actions button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
